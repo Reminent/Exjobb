@@ -22,8 +22,9 @@ public class MovingTexture : MonoBehaviour {
         */
         scrollSpeed = 2;
         Vector3 position = player.transform.position;
+        float z = position.z * (float)0.1;
         float x = Mathf.Repeat(Time.time * scrollSpeed, 1);
-        Vector2 offset = new Vector2(position.z, savedOffset.y);
+        Vector2 offset = new Vector2(position.z + savedOffset.x, savedOffset.y);
         GetComponent<Renderer>().sharedMaterial.SetTextureOffset("_MainTex", offset);
 	}
     void OnDisable()
