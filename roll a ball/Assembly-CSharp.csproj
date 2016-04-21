@@ -48,6 +48,9 @@
      <Compile Include="Assets\Scripts\Move2.cs" />
      <Compile Include="Assets\Scripts\Moving.cs" />
      <Compile Include="Assets\Scripts\MovingTexture.cs" />
+     <Compile Include="Assets\Scripts\MovingTexture2.cs" />
+     <Compile Include="Assets\Scripts\SetTexture.cs" />
+     <Compile Include="Assets\Scripts\SimpleMove.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>H:/Spel/Unity Engine/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
