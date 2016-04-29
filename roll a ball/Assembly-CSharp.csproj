@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CombineTextures.cs" />
      <Compile Include="Assets\Scripts\Move2.cs" />
      <Compile Include="Assets\Scripts\Moving.cs" />
      <Compile Include="Assets\Scripts\MovingTexture.cs" />
