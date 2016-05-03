@@ -7,8 +7,16 @@ public class Moving : MonoBehaviour
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
     private Vector3 moveDirection = Vector3.zero;
-    void Update()
-    {
+
+    void Start() {
+        double s = -4.9;
+        for (int i = 0; i < 50; i++)
+        {
+            s += 0.196;
+            Debug.Log(s);
+        }
+    }
+    void Update() {
         CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
