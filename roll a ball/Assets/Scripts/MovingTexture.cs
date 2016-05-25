@@ -16,11 +16,6 @@ public class MovingTexture : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        float x = Mathf.Repeat(Time.time * scrollSpeed, 1);
-        Vector2 offset = new Vector2(x, savedOffset.y);
-        GetComponent<Renderer>().sharedMaterial.SetTextureOffset("_MainTex", offset);
-        */
         GameObject parent = this.transform.parent.gameObject;
         Vector3 parentZ = parent.transform.position;
         Vector3 position = player.transform.position;
@@ -34,3 +29,4 @@ public class MovingTexture : MonoBehaviour
         GetComponent<Renderer>().sharedMaterial.SetTextureOffset("_MainTex", savedOffset);
     }
 }
+

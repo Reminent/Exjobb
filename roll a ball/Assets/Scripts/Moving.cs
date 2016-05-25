@@ -31,3 +31,4 @@ public class Moving : MonoBehaviour
         controller.Move(moveDirection * Time.deltaTime);
     }
 }
+
